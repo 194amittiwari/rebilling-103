@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>Dropdown Menu with Interlinks - Bootstrap</title>
+  <!-- Include Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+</head>
+<body>
+
+<app-header-navbar></app-header-navbar>
+
+
+
+
+<div class="d-flex">
+    <div class=" border bg-light" style="width: 250px; height: 100vh">
+        <!-- <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+                <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                    Meter
+                </button>
+                <div class="collapse show" id="home-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a routerLink="meter-add" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="link-dark d-inline-flex text-decoration-none rounded">Create</a></li>
+                        <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded">View</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul> -->
+
+        <!-- by sir -->
+        
+        
+        <!-- <div class="list-group">
+            <button class="btn dropdown-toggle rounded-0 text-center bg-primary-subtle py-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Meter
+            </button>
+            <div class="collapse show" id="collapseExample">
+                <a href="#" class="list-group-item list-group-item-action" routerLink="meter-add" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Create</a>
+               
+                <a href="#" class="list-group-item list-group-item-action" routerLink="meter-view" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}">Meter View</a>
+            </div>
+        </div> -->
+        <!-- by sir -->
+
+
+
+        <div class="list-group" style="background-color: white; height: 100vh;">
+            <!-- Dropdown toggle button -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle rounded-0 text-center bg-primary-subtle py-2 " style="width: 100%; color: black; " data-bs-toggle="dropdown">
+                    Meter
+                </button>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" style="width: 100%; height: 100%;" >
+                    <!-- Dropdown items (links to other pages) -->
+                    <li><a href="#" class="dropdown-item" routerLink="meter-add" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Create</a></li>
+                    <li><a href="#" class="dropdown-item" routerLink="meter-view" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}">Meter View</a></li>
+                </ul>
+            </div>
+        </div>
+        
+       
+
+
+
+        <!-- <div class="list-group">
+            <button class="btn dropdown-toggle rounded-0 text-center bg-primary-subtle py-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Meter View
+            </button>
+            <div class="collapse show" id="collapseExample">
+                <a href="#" class="list-group-item list-group-item-action" routerLink="meter-add" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Create</a>
+               
+                <a href="#" class="list-group-item list-group-item-action" routerLink="meter-view" routerLinkActive="" [routerLinkActiveOptions]="{exact: true}">Meter View</a>
+            </div>
+        </div>
+ -->
+<div>
+<br>
+</div>
+
+</div>
+<div class="container-fluid p-0">
+<router-outlet></router-outlet>
+</div>
+</div>
+
+<!-- Include Bootstrap 5 JS (Popper.js and Bootstrap.bundle.js are required) -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+</html>

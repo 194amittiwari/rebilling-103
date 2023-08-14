@@ -1,0 +1,9 @@
+{
+  "/rebilling/": {
+    "target": "http://10.98.7.163:8081",
+    
+    
+    "secure": false
+  }
+}
+  
